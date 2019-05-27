@@ -1,0 +1,30 @@
+<ion-content padding>
+
+  <h1 text-center>
+    <ion-icon name="done-all" color="primary" class="icon-7em"></ion-icon>
+  </h1>
+
+  <ion-item>
+    <ion-icon name="mail" color="primary" slot="start"></ion-icon>  
+    <!-- A propriedade slot irá definir dentro do ion-item onde ficará posicionado este ícone. Quando não escolhemos o slot ele utiliza
+    um slot default, como foi declarado no icon acima então esse que vem abaixo ficará posicionado corretamente -->
+    <ion-input type="email" placeholder="E-mail" inputmode="email" autofocus="true"></ion-input>
+    <!-- Usando o inputmode="email" fará com o ionic utilize um teclado mais apropriado para e-mail quando estiver num dispositivo móvel -->
+    <!-- Visite o site para ver a documentação de todos os componentes: https://ionicframework.com/docs/components -->
+  </ion-item>
+
+  <ion-item>
+      <ion-icon name="lock" color="primary" slot="start"></ion-icon> 
+      <ion-input type="password" placeholder="Password"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block">Login</ion-button>
+    <ion-button expand="block" fill="clear">Create Account</ion-button>
+    <!-- O fill="clear" é para que o botão fique no formato do texto com a cor primária do botão -->
+    <ion-button expand="block">
+      <ion-icon name="logo-facebook" slot="start"></ion-icon>
+      <!-- Visite o site para ver a documentação do button: https://ionicframework.com/docs/api/button -->
+      Login with Facebook
+    </ion-button>
+
+</ion-content>
